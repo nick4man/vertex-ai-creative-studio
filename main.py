@@ -25,6 +25,8 @@ from vertexai.generative_models import (
     HarmCategory,
     Part,
 )
+from google.colab import auth 
+auth.authenticate_user() 
 from vertexai.preview.vision_models import ImageGenerationModel
 from models.image_models import ImageModel
 from config.default import Config
